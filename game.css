@@ -1,0 +1,39 @@
+hml, body, div, canvas {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Trebuchet MS';
+	font-size:18px;
+	background: #000;	
+	-ms-overflow-style: none;
+	overflow: hidden; 
+	white-space: nowrap;
+}
+#loading-title {
+	position: absolute;
+  top: 50%;
+  left: 50%;
+	color: white;
+	font-size: 24px;
+	font-weight:bold;
+  text-shadow: 2px 2px #000000;
+	transform: translate(-50%, -50%);	
+	z-index:10000;
+}
+#loading-bar-container {
+	position: absolute;
+  top: 50%;
+  left: 50%;	
+	width:300px;
+	height: 35px;
+  background: #000;
+	outline: 2px solid white;
+  transform: translate(-50%, -50%);	
+	z-index:1000;
+}
+#loading-bar{
+	width: 0px;
+	height: inherit;
+	background: url('loading.png');
+}
